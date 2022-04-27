@@ -9,9 +9,9 @@ async function success({ coords, timestamp }) {
 } 
 function getUserLocation() { 
   if (!navigator.geolocation) {
-    throw "위치 정보가 지원되지 않습니다."; 
+    alert( "위치 정보가 지원되지 않습니다."); 
   } 
-  navigator.geolocation.getCurrentPosition(success); 
+  navigator.geolocation.getCurrentPosition(success,()=>{alert( "GPS를 켜주세요")}); 
 }
 const changeC = (temp)=>{
   const C = temp - 273.15
