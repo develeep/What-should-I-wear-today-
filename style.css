@@ -1,3 +1,128 @@
+:root {
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #cbdef8;
+  --color-dark-blue: #b3d0f8;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+  --color-light-beige: rgb(238, 232, 212);
+  /* Font size */
+  --font-large: 48px;
+  --font-Small-large: 38px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* font-style: ; */
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--color-blue);
+}
+header{
+  font-size: var(--font-large);
+  margin: var(--font-large);
+}
+header h1{
+  color:var(--color-white);
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin: var(--font-large);
+}
+.top{
+  width: 600px;
+  padding: 0 var(--font-medium);
+  margin: var(--font-small);
+}
+.top #top{
+  display: flex;
+  justify-content: center;
+  font-size:var(--font-large);
+  font-weight:var(--weight-bold);
+  margin-bottom: var(--font-large);
+  color:var(--color-white);
+}
+.img-top{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-large);
+  color:var(--color-white);
+  font-weight: var(--weight-bold);
+}
+.img-top span{
+  padding: var(--font-medium);
+  background-color: var(--color-dark-blue);
+  border-radius: 10px;
+}
+.bottom{
+  width: 600px;
+  padding: 0 var(--font-medium);
+  margin: var(--font-large);
+}
+.bottom #bottom{
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-large);
+  font-weight:var(--weight-bold);
+  margin-bottom: var(--font-large);
+  color:var(--color-white);
+}
+.img-bottom{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-large);
+  color:var(--color-white);
+  font-weight: var(--weight-bold);
+  
+}
+.img-bottom span{
+  padding: var(--font-medium);
+  background-color: var(--color-dark-blue);
+  border-radius: 10px;
+}
 .searchImg {
-  width: 100px;
+  width: 150px;
+  border-radius: 10px;
+}
+#comment{
+  font-size: var(--font-medium);
+  color: var(--color-white);
+  font-weight: var(--weight-semi-bold);
+  text-align: center;
+}
+.btn{
+  font-size:var(--font-Small-large);
+  font-weight:var(--weight-bold);
+  color:var(--color-white);
+  border-radius: 10px;
+  background-color: var(--color-dark-blue);
+  margin-top: var(--font-large);
+  padding: var(--font-micro);
+}
+.btn:hover{
+  cursor: pointer;
 }
