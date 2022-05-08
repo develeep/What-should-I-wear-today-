@@ -1,4 +1,4 @@
-import { topWear,bottomWear } from './IMGSearch.js';
+import { Wear, comment } from './IMGSearch.js';
 import getTemp from './getTemp.js';
 function getUserLocation() {
   if (!navigator.geolocation) {
@@ -12,7 +12,7 @@ async function success({ coords, timestamp }) {
   const longitude = coords.longitude; // 경도 
   const temp = await getTemp(latitude, longitude);
   console.log(temp);
-  topWear(temp);
-  bottomWear(temp);
+  Wear(temp);
+  comment(temp);
 }
 export default getUserLocation
